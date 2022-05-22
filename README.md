@@ -122,6 +122,8 @@ Por exemplo:
 
 `git remote rename origin local`
 - Para renomear
+1-) O nome atual do seu controle remoto (origin)
+2-) O nome para o qual você deseja alterar o controle remoto (local)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -129,32 +131,38 @@ Por exemplo:
 
 1-) ir até seu GitHub e criar um repositorio e pegar o caminho dele que esta em "CODE"
 
-2-) ir até o terminal e colocar o seguinte comando Passando o nome do repositório: git remote add origin https://github.com/iRnx/Django.git
+2-) ir até o terminal e colocar o seguinte comando Passando o nome do repositório: `git remote add origin https://github.com/iRnx/Django.git`
 
-3-) Depois basta enviar a branch que vc quer,que nesse caso sera a branch master: git push origin master
+3-) Depois basta enviar na branch que você quer, que nesse caso será a branch master: `git push origin master`
 
-Caso queira excluir uma pasta remota: git remote remove origin
+Observação:
+
+- Caso queira excluir uma pasta remota: `git remote remove origin`
 
 Prontoooo !!! 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-usar branch:
+## Usar branch:
 
-1-) criar uma nova branch, git branch titulo, uma forma rapida tbm de criar branch: git checkout -b titulo
+1-) criar uma nova branch, `git branch titulo`, uma forma rápida tbm de criar branch: `git checkout -b titulo`, você criaria a branch titulo e ja estaria nela
 
-2-) git branch, para ver em qual branch vc esta.
+2-) `git branch`
+- para ver em qual branch você está
 
-3-) git checkout titulo, para vc mudar de branch
-
------------------------------------------------------------------------------------------------------------------------------------------------
-
-para usar o merge:
-
-1-) O merge junta uma branch: git merge titulo  # este comando iria juntar a branch titulo na sua branch master. Porém para juntar, atualmente vc tem q estar na branch master por exemplo e dps fazer o merge #
+3-) `git checkout titulo`
+- para você mudar de branch
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-Rebase:
+## para usar o merge:
 
-1-) git rebase titulo # Serve para atualizar a master com outra branch, por exemplo: todas as atualizações que estiver na branch titulo, nós queremos trazer para a branch master. então basta estar na branch master e fazer um rebase. #
+1-) O merge junta uma branch: `git merge titulo`
+- este comando iria juntar a branch titulo na sua branch master. Porém para juntar, atualmente vc tem q estar na branch master por exemplo e dps fazer o merge
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Rebase:
+
+1-) `git rebase titulo` 
+- Serve para atualizar a master com outra branch, por exemplo: todas as atualizações que estiver na branch titulo, nós queremos trazer para a branch master. então basta estar na branch master e fazer um rebase 
