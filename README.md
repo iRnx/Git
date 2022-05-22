@@ -64,56 +64,72 @@ Por exemplo:
 
 1-) cd.. (para voltar para pasta GitHub)
 
-2-) criar um diretório dentro da pasta GitHub com o comando, `mkdir "nome da pasta"` 
+2-) criar um diretório dentro da pasta GitHub com o comando, `mkdir "servidor"`
 
-3-) entrar dentro da pasta criada, `cd "nome da pasta/"`
+3-) entrar dentro da pasta criada, `cd servidor/`
 
 4-) agora dentro da pasta criada basta executar o camando, `git init --bare` 
-- Para informar que, nessa pasta que você está, irá receber apenas as alterações do código. vc irá receber uma mensagem que inicializou um repositório vazio no caminho C:/Users/renan/Documents/GitHub/"nome da pasta"/
+- Para informar que, nessa pasta que você está, irá receber apenas as alterações do código. vc irá receber uma mensagem que inicializou um repositório vazio no caminho C:/Users/renan/Documents/GitHub/servidor/
 
-5-) agora temos que entrar na Renan onde estão os codigos para serem enviados para o repositorio servidor. cd ../Renan/
+5-) agora temos que entrar na pasta Renan onde estão os codigos para serem enviados para o repositorio "nome da pasta" cd ../Renan/
 
-6-) agr vamos adicionar o endereço, git remote add local C:/Users/renan/Documents/GitHub/servidor/  # podemos dar um nome pro nosso repositorio que se chamará de "local" acompanhado do endereço do repositório #
+6-) agora vamos adicionar o endereço, `git remote add local C:/Users/renan/Documents/GitHub/servidor/`  
+- podemos dar um nome pro nosso repositorio que se chamará de "local" acompanhado do endereço do repositório
 
-7-) git remote, este comando retornará o nome do endereço do repositório o nome é "local" 
+7-) `git remote`
+- este comando retornará o nome do endereço do repositório o nome é "local" 
 
-8-) git remote -v  # Mostra o caminho #
+8-) `git remote -v`
+- Mostra o caminho
 
-9-) cd .. para voltar para pasta GitHub, e criar uma pasta chamada "ana" que tbm vai fazer parte do projeto para criar, mkdir ana
+9-) `cd ..` para voltar para pasta GitHub, e criar uma pasta chamada "ana" que também vai fazer parte do projeto, para criar a pasta: `mkdir ana`
 
-10-) cd ana, para entrar na pasta ana.
+10-) `cd ana`
+- para entrar na pasta ana
 
-11-) Agora a ana irá baixar para ela do nosso repositório, todo o conteúdo ja feito ate agr no nosso projeto com o seguinte comando, git clone  C:/Users/renan/Documents/GitHub/servidor/  # ela irá baixar tudo q tem nessa pasta servidor #
-
-12-) Porém quando ela baixar, o repositório estará vazio. pq na pasta Renan, ainda n subiu pro Repositório o projeto. 
-
------------------------------------------------------------------------------------------------------------------------------------------------
-
-git init --bare # Para informar que nessa pasta q vc esta irá receber apenas as alterações do código #
-
-git remote add local C:/Users/renan/Documents/GitHub/servidor/ # para add um servidor chamado no caso desse exemplo de "local" #
-
-git remote  # para listar os servidores que tem #
-
-git remote -v  # Mostra o caminho #
-
-git clone C:/Users/renan/Documents/GitHub/servidor/ projeto # para baixar algum dado do repositório servidor #
-
-git push local master # git push para enviar, local para indicar q será no repositorio chamado servidor e master que é a branch q estamos. #
-
-git remote # Lembrando que esta pasta é da ana/projeto #
-
-git remote rename origin local # Para renomear #
-
-git pull local master # git pull para pegar,  este comando irá pegar no repositorio a nova atualização do projeto #
+11-) Agora a ana irá baixar para ela do nosso repositório, todo o conteúdo ja feito ate agora no nosso projeto, com o seguinte comando: `git clone  C:/Users/renan/Documents/GitHub/servidor/`
+- ela irá baixar tudo que tem nessa pasta servidor Porém quando ela baixar, o repositório estará vazio. por que na pasta Renan, ainda não subiu pro Repositório o projeto. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-Para Subir um código pro GitHub:
+`git init --bare` 
+- Para informar que nessa pasta que vc está, irá receber apenas as alterações do código
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+`git remote add local C:/Users/renan/Documents/GitHub/servidor/` 
+- para adicionar um servidor chamado no caso desse exemplo de "local"
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+`git remote`  
+- para listar os servidores que tem
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+`git remote -v`  
+- Mostra o caminho
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+`git clone C:/Users/renan/Documents/GitHub/servidor/projeto` 
+- para baixar algum dado do repositório servidor
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+`git push local master`
+- git push para enviar, local para indicar que será no repositorio chamado servidor, e master que é a branch que estamos
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+`git pull local master` 
+- git pull para pegar, este comando irá pegar no repositorio a nova atualização do projeto
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+`git remote rename origin local`
+- Para renomear
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Para Subir um código pro GitHub:
 
 1-) ir até seu GitHub e criar um repositorio e pegar o caminho dele que esta em "CODE"
 
-2-) ir até o terminal e colocar o seguinte comando Passando o nome do repositório: git remote add origin https://github.com/iRnx/Alura.git
+2-) ir até o terminal e colocar o seguinte comando Passando o nome do repositório: git remote add origin https://github.com/iRnx/Django.git
 
 3-) Depois basta enviar a branch que vc quer,que nesse caso sera a branch master: git push origin master
 
