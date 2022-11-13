@@ -172,7 +172,6 @@ Prontoooo !!!
 Resolvendo conflitos:
 
 branch renan:
-
 `git pull origin master --rebase`
 
 
