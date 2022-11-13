@@ -171,17 +171,17 @@ Prontoooo !!!
 
 Resolvendo conflitos:
 
-branch renan
+branch renan:
 
 `git pull origin master --rebase`
 
 
-branch master
+branch master:
 `git merge renan`
 `git push origin master`
 
 
-branch renan
+branch renan:
 `git pull origin renan --rebase`
 `git push origin renan`
 
