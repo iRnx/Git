@@ -166,3 +166,24 @@ Prontoooo !!!
 
 1-) `git rebase titulo` 
 - Serve para atualizar a master com outra branch, por exemplo: todas as atualizações que estiver na branch titulo, nós queremos trazer para a branch master. então basta estar na branch master e fazer um rebase 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Resolvendo conflitos:
+
+branch renan
+
+git pull origin master --rebase
+
+
+branch master
+git merge renan
+git push origin master
+
+
+branch renan
+git pull origin renan --rebase
+git push origin renan
+
+
+
